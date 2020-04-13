@@ -1,0 +1,181 @@
+
+
+ul {
+list-style : none;
+float : right;
+
+
+}
+li {
+float : right;
+font-size : 20px;
+padding : 20px;
+
+
+}
+html{
+
+background-image : url(images/2.jpg);
+background-repeat : repeat-y;
+padding : 20px;
+
+border : 2px solid green;
+
+border-radius : 20px;
+
+
+}
+
+
+
+
+body{
+
+
+
+  padding: 0px;
+
+
+
+  color :  	#280000  ;
+
+}
+
+
+.steve{
+        padding : 20px;
+color : black;
+}
+img {
+  margin-left: 250px;
+  height : 150px;
+border : 2px solid black;
+border-radius : 10px;
+margin-top : 20px;
+
+
+
+}
+
+
+
+h1{
+margin : 0 auto;
+
+  width: 700px;
+
+
+
+        color : red;
+        border-bottom : 2px solid orange;
+
+font-family : showcard gothic;
+
+
+
+
+}
+
+h2{
+
+width: 140px;
+  color : #000033 	 ;
+  font-family : calibra;
+  padding-top : 19px;
+              overflow : hiddden;
+
+              margin:0 auto;
+              padding-left : 1%;
+              border-bottom : 2px dotted black;
+
+
+
+
+
+font-family : cambria;
+}
+
+
+
+p{
+      padding-top: 17px;
+margin : 0 auto;
+
+width: 700px;
+margin : 0 auto;
+color :black;
+font-family : Adobe Garamond pro;
+font-size : 15px;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.microsoft img {
+margin : 0 auto;
+height : 60px;
+
+}
+
+
+.billgates img {
+
+float : right;
+width : 15em;
+margin : 0 auto;
+box-shadow : 2px 2px 20px;
+
+}
+
+.stevejobs img{
+
+float : left ;
+margin-left : 20px;
+margin-right : 2em;
+box-shadow : 2px 2px 20px;
+
+
+}
+
+
+.sidebar {
+
+width : 15%;
+
+float : right;
+border : 2px dotted black;
+margin : 0 auto;
+padding : 20px;
+
+
+}
+
+.sidebar img {
+
+margin : 0 auto;
+padding:0;
+width : 90%;
+
+}
+
+
+.sidebar2 {
+
+
+margin : 0 auto;
+float : left;
+width : 15%;
+
+padding : 20px;
+border : 2px dotted black;
+
+}

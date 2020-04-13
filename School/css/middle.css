@@ -1,0 +1,151 @@
+.middle
+{
+margin-top : 100px;
+
+}
+.sidebarOne 
+{
+float : left;
+padding-left : 20px;
+height : 100%;
+}
+.sidebarOne ul li
+{
+	padding-left : 20px;
+	}
+.sidebarOne li:first-child a:hover , .sidebarOne li:nth-child(2) a:hover
+{
+	text-decoration : none;
+		}
+
+nav
+{
+padding-top : 120px;
+position : static;
+
+}
+nav li
+{
+
+list-style : none;
+padding : 10px;
+
+margin-left : 0;
+}
+
+.drop li:first-child
+
+{
+	margin-top : 15px;	
+	}
+
+
+/************************ Coloring Styles**********************/
+
+.drop li
+{
+	//background-color : #444444;
+	border : 1px solid white;
+	}
+
+
+nav a
+{
+	font-size : 14px;
+	font-family : roboto;
+	text-decoration : none;
+	padding-top : 10px;
+	padding-bottom : 6px;
+}
+
+
+nav  li:not(.dp)
+{
+//	background-color : #76B75B;
+	background-color : #78C1FF;
+
+	
+	}
+
+
+nav .ndp a , .drop a
+{
+	color : white;
+	}
+nav .ndp
+{
+	border-bottom : 1px solid #444444;
+	}	
+
+#none
+{
+	border-top : 1px solid #444444;
+	
+	}
+nav  li:not(.dp):hover
+{
+	background-color : #76B75B;
+
+
+	
+	}
+
+#dp a:hover
+
+{
+	cursor : pointer;
+	}
+.sidebarOne #dp   
+	
+	
+	
+	{
+background :  url("../images/up.png") no-repeat -15px -4px;
+
+cursor : pointer;
+		
+		}
+
+.sidebarOne #dp:hover 
+{
+		background : url("../images/down.png") no-repeat -15px -4px;
+
+		}
+
+.sidebarOne #dp > a
+{
+	
+		cursor : default;
+		color : black;
+	}
+
+.sidebarOne #dp a:hover
+{
+	
+		cursor : default;
+		color : black;
+	}
+
+
+
+
+
+/***************** Drop Down ********/
+
+nav ul ul
+{
+display :none;
+}
+
+nav ul li:hover > ul
+{
+display : block;
+}
+.startoe
+{
+width : 701px;
+margin : 0 auto;
+}
+
+
+

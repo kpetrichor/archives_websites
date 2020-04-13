@@ -1,0 +1,183 @@
+<html>
+<head>
+
+<title> </title>
+
+
+<script src="js/jquery-1.7.2.min.js"> </script>
+<style>
+
+.content
+{
+	height : 100%;
+	}
+
+.lcontent .choices
+{
+	margin-left : 120px;
+	}
+/*********************** About Inline links nav ***************/
+
+.choices li	
+{
+	display : inline-block;
+	padding : 15px;
+	padding-bottom : 25px;
+	background-color : black;
+	margin-right : -4px;
+	border : 1px solid white;
+	
+	width : 180px;
+	height : 20px;
+	text-align : center;
+	margin-top : 15px;
+	cursor : grab;
+	}
+
+
+.choices li a
+
+{
+
+	font-size :20px;
+	color : white;
+	text-decoration : none;
+	padding-right : 10px;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	font-family : roboto;
+	}
+.choices  .csix a
+{
+	font-size : 19px;
+	text-align : left;
+	color : white;	
+	}
+
+/*******************************       Hovering CLICKS with color ************************/
+.cone:hover
+{
+
+	background-color : 	#EFB571;
+	border : 1px solid black;
+	}
+
+.ctwo:hover
+{
+
+	background-color : 	#E5E3A7;
+	border : 1px solid black;
+	}
+
+.cthree:hover
+{
+
+	background-color : 	#71E1EF;
+	border : 1px solid black;
+	}
+
+.cfour:hover
+{
+
+	background-color : 	#E5CCA7;
+	border : 1px solid black;
+	}
+
+.cfive:hover
+{
+
+	background-color : 	#494546;
+	border : 1px solid black;
+	}
+.csix:hover
+{
+
+	background-color : #A7E5CF;
+	border : 1px solid black;
+	}
+
+
+
+/*******************  Hey these are for changing the colors of links ******************************/
+.cone:hover a
+{
+	color : black; 	
+	}
+.choices .ctwo:hover a
+{
+	color : black ; 	
+	}
+
+.cthree:hover a
+{
+	color : black ; 	
+	}
+
+
+.cfour:hover a
+{
+	color :black ; 	
+	}
+
+
+.cfive a
+{
+	color :  ; 	
+	}
+
+.csix:hover a
+{
+	color :black ; 	
+	}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div class= "lcontent">
+		
+		<span class="topic"> <h1> Facilities </h1></span>
+	
+
+		<div class="choices">
+		
+			<ul>
+				<li class="cone" onclick="callfac('fac/computer.html')"> <a href="#" > Computer Lab </a> </li>
+				
+				<li class = "ctwo" onclick="callfac('fac/robotics.html')"> <a href="#"  > Robotics </a> </li>
+				<li class = "cthree" onclick="callfac('fac/science.html')"> <a href="#" >Science Lab</a> </li>
+				<br>
+				<li class = "cfour" onclick="callfac('fac/councilor.html')" > <a href="#" > Councilor Room </a> </li>
+				<li class= "cfive" onclick="callfac('fac/library.html')" > <a href="#" > Library </a> </li>
+				<li class="csix" onclick="callfac('fac/safe.html')"> <a href="#" > Safety & Sanitation </a> </li>
+				
+			
+			
+			</ul>
+		
+
+		</div>
+
+		<div class = "facilitiesContent">
+
+		</div>
+	
+
+
+	</div>
+	<script class="lcontent">
+function callfac(flocate)
+			{
+				flink = 'linked/' +flocate 
+
+		                $(".facilitiesContent") .load(flink);	
+			}
+	</script>
+
+</body>
+
+</html>

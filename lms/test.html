@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Kunal </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script type="text/JavaScript" src="jquery.js"> </script>
+<style>
+.content{
+position : relative;
+
+
+-webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 45%;
+left : 50%;
+
+}
+body{
+background : #696969;
+}
+
+#b{
+padding : 20px;
+width: 120px;
+font-size : 20px;
+position : absolute;
+left : 180px;
+
+}
+
+h1{
+color : white;
+text-align : center;
+}
+.change{
+width : 500px;
+
+
+}
+.foot{
+color : white;
+font-size :20px;
+top : 95%;
+
+left : 90%;
+position : absolute;
+}
+
+#reading{
+margin-top :20%;
+left : 18%;
+position : relative;
+
+}
+</style>
+<script>
+
+
+  $(document).ready(function() {
+
+
+			var wind , i,url , v1, v2 ,k=0;
+	       	   $("#b").click(function() {
+						
+		 	
+		  
+		   //myWindow.close();
+		 /*  v1 =  $("#v1").val();
+		  v2 = $('#v2').val();
+
+		  $("#count").text(value);
+		*/
+
+		var file = "links.txt";
+   
+  		 $.get(file,function(data){
+       
+		    var lines = data.split("\n");
+            			
+
+                    // Loop through all lines of record
+                    $.each(lines, function(n, url) {
+		    
+		    k++;
+                       //  $('#read').append('<div>' + urlRecord + '</div>');   
+			
+
+
+ 
+wind = window.open(url , "_blank","width=400 , height = 400");
+//$('.change').text("Read : " + k+ " Links");
+$('.change').text("Reading");
+
+
+                    });
+
+$('.change').text("Complete");
+
+    });  
+
+
+		 /* for(i=;i<=3;i++){
+		  for(i=v1;i<=v2;i++){
+		  url = "http://mydy.dypatil.edu/rait/mod/flexpaper/view.php?id="+i
+
+		  wind = window.open(url , '_blank',"width=400 , height = 400")
+		  
+		  $("#count").text(url);
+
+
+
+		  } */
+		  
+		});
+
+
+            });
+</script>
+
+
+
+</head>
+<body>
+<div class = "content">
+
+<div id="read">
+<h1 class = "change"> Hello,This is Auto LMS</h1>
+</div>
+<form>
+
+<button type = "button" id="b" class="btn btn-danger">H I T</button>
+
+
+</form>
+
+
+</div>
+
+<div class = "foot">
+Kunal Was.
+</div>
+</body>
+
+
+</html>

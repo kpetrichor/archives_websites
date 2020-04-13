@@ -1,0 +1,247 @@
+<html>
+<head>
+
+<style>
+
+#main-gallery
+{
+	position : relative;
+
+	}
+
+#gallery img
+{
+	width : 120px;
+	padding : 5px;
+	}
+
+
+	
+#display img
+	
+	{
+		border : 2px solid #ccc;
+		border-radius : 10px;
+		position : absolute;
+		width : 30%;
+		height : 50%;
+		overflow : hidden;
+		//top : -100px;
+		-moz-transition : top .5s;
+		}
+
+
+	
+
+#display
+{
+	width : 600px;
+	//	height : 400px;
+	height : 100%;
+	transition : all 2s;
+	margin-left : 60px;
+	z-index : 1;
+
+	}
+
+#gallery img:hover
+	{
+	cursor : pointer;
+		}
+
+#gallery
+	{
+	 display : inline-block;
+	float : right;
+	overflow : hidden;
+	 	margin-bottom : 40px;
+		}	
+
+#gallery li
+	
+	{
+	 list-style : none;
+	 	}
+
+
+
+/* effects */
+#gallery img
+{
+	opacity : 0.5;
+	}
+
+#gallery img:hover
+{
+	opacity : 1;
+	-moz-transform : scale(1.3);
+	}
+
+.dcaption
+{
+	font-family : georgia ;
+	position : absolute;
+	z-index : 3;
+	margin-left : 20px;
+	padding  : 10px;
+	background : #fff;
+	-moz-transition : top .5s;
+	padding-right : 500px;
+	opacity : .5;
+	}
+
+	.clear
+	{
+		}
+
+
+
+
+	
+
+
+</style>
+
+<script src ="../js/jquery-1.7.2.min.js"> </script>
+
+
+<script>
+
+$(document).ready(function()
+{
+
+ $("#gallery img").click(function()
+	{	
+			
+	//source = path of image
+		source = $(this).attr('src');	
+			var	old = $("#display img");	
+		var 	newimage = $('<img src="'+ source + '">');
+			
+	
+		if(($('#display img').css('top')) <= '60%' )
+		{
+			var prop = "60";
+			}
+	
+		else if(($(window).scrollTop()) == '0')
+		{
+			var prop = "40";
+			}
+		else
+			{
+				}
+		old.remove();	
+			$("#display").append(newimage);
+			newimage.css({"top" : prop + "%"});
+			newimage.hide();
+				
+			
+		newimage.fadeIn(1000);
+		n = $(window).scrollTop();
+	 //	document.write(n);
+});
+
+
+// THIS IS ABOUT PHOTO display element
+
+/*	$(window).scroll(function()
+	{
+	if( ($(window).scrollTop() > '151') && ($(window).scrollTop()<'299') ) 
+		{
+		$("#display").css({"margin-top" : "200px"});	
+		
+		} // end if
+	
+	
+		else  if ( $(window).scrollTop() < '151')	
+		{
+		
+		
+		$("#display").css({"margin-top" : "0px"});	
+				} // end else 2
+
+		else  if ( $(window).scrollTop() > '300')	
+		{
+		
+	
+		$("#display").css({"margin-top" : "300px"});
+		$("#display img").css({"padding-bottom":"0px"});	
+				}
+	
+
+
+	
+	}); // end scroll function
+
+	*/
+
+	$(window).scroll(function()
+	{
+		var pos = $(window).scrollTop();
+		
+		if(pos == '0')
+		{
+		$('#display img').css({"top":"50%"});
+		$('#display .dcaption').css({"top":"40%"});
+	
+			}
+			else
+			{
+			
+			$('#display img').css({"top":"60%"});
+		
+		$('#display .dcaption').css({"top":"60%"});
+	
+	
+			}
+	
+			
+		}); // end scroll
+
+
+
+
+	
+});
+
+
+</script>
+
+
+</head>
+
+<body>
+
+	<div class="main-gallery">
+		Pic View
+	<div id= "gallery">
+			
+
+		<ul>
+		<li><img src = "../images/gallery/2.jpg"> <li>
+		<li><img src = "../images/gallery/3.jpg"> <li>
+		<li><img src = "../images/gallery/4.jpg"> <li>
+		<li><img src = "../images/gallery/5.jpg"> <li>
+		<li><img src = "../images/gallery/6.jpg"> <li>
+		<li><img src = "../images/gallery/7.jpg"> <li>
+		<li><img src = "../images/gallery/8.jpg"> <li>
+		<li><img src = "../images/gallery/9.jpg"> <li>
+
+
+		</ul>
+
+	</div>
+
+	<div id = "display">
+
+	</div>
+
+	<div class="clear">
+	</div>
+
+	</div>
+	
+</body>
+
+</html>

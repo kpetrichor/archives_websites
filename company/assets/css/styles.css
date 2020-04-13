@@ -1,0 +1,510 @@
+
+body{
+
+  background-color:white;
+  background-size: 100%;
+font-family: averta;
+color : black;
+  scroll-behavior: smooth;
+height : 100%;
+width : 100%;
+position: absolute;
+margin-top : 0%;
+padding-top: 0%  left : 100%;;
+}
+
+
+.slides{
+  position: absolute;
+  	width : 100%;
+  	height : 100%;
+
+
+ 	overflow: hidden;
+
+
+}
+
+section{
+
+width : 100%;
+height : 100%;
+padding : 36px;
+box-sizing : border-box;
+-moz-box-sizing : border-box;
+position: absolute;
+visibility: hidden;
+
+
+}
+
+/* SECTIONS */
+.one{
+
+
+
+  height : 100%;
+  width : 100%;
+  min-height: 100%;
+  min-width: 100%;
+
+
+}
+
+.two{
+
+
+
+background-size: 100%;
+  height : 100%;
+  width : 100%;
+  min-height: 100%;
+
+
+
+}
+
+
+.three{
+
+
+  height : 100%;
+  width : 100%;
+  min-height: 100%;
+
+
+
+
+}
+.two p{
+
+transition: all 2s;
+
+
+
+}
+.section.active p{
+
+}
+.three p{
+
+}
+.four p{
+
+
+}
+
+.four{
+
+
+  height : 100%;
+  width : 100%;
+  min-height: 100%;
+
+
+}
+
+
+
+/* FONTS */
+#logo {
+left:50%;
+top : 50%;
+
+position: absolute;
+
+
+}
+#logo{
+
+  text-transform: lowercase;
+  font-family: averta;
+  font-size : 40px;
+animation : none;
+
+}
+#arrow {
+  /* border : 1px solid blue;
+  background: -moz-linear-gradient(#000428,#004e92); */
+
+position: fixed;
+z-index: 100;
+padding-left: 5px;
+height: 200px;
+top : 40%;
+
+margin : 0%;
+width : 100px;
+}
+
+.larrow{
+
+  background-color: white;
+      -moz-mask:  url(../../images/larrows.svg) no-repeat 50% 50%;
+      mask: url(../../images/larrows.svg) no-repeat 50% 50%;
+      mask-size : 70px 100px;
+
+}
+
+
+.larrow:nth-child(2) {
+
+  background-color: white;
+      -moz-mask:  url(../../images/larrows.svg) no-repeat 50% 50%;
+      mask: url(../../images/larrows.svg) no-repeat 50% 50%;
+      mask-size : 70px 100px;
+    left : 20px;
+
+}
+
+
+.rarrow{
+
+  background-color: white;
+      -moz-mask:  url(../../images/rarrows.svg) no-repeat 50% 50%;
+      mask: url(../../images/rarrows.svg) no-repeat 50% 50%;
+mask-size : 70px 100px;
+right : 0px;
+
+}
+
+
+.rarrow:nth-child(2){
+
+  background-color: white;
+      -moz-mask:  url(../../images/rarrows.svg) no-repeat 50% 50%;
+      mask: url(../../images/rarrows.svg) no-repeat 50% 50%;
+mask-size : 70px 100px;
+right : -20px;
+
+}
+
+#arrow{
+  cursor: pointer;
+
+
+}
+#arrow:hover{
+animation: none;
+
+}
+.rarrow:nth-child(2), .larrow:nth-child(2) {
+-moz-animation: arrow 2s infinite;
+}
+
+.rarrow:nth-child(1), .larrow:nth-child(1) {
+-moz-animation: barrow 2s infinite;
+
+}
+.left{
+  visibility: visible;
+}
+.right{
+  visibility: visible;
+}
+
+.navigation{
+position: fixed;
+cursor: pointer;
+
+z-index: 2000;
+
+
+top : 90%;
+width: 100%;
+min-width: 100%;
+position: absolute;
+}
+.navigation ul{
+left : 50%;
+color : black;
+position: fixed;
+min-width: 30%;
+top: : 90%;
+
+-moz-animation : slide 1.5s;
+
+}
+
+.navigation li{
+
+
+border-bottom:  3px solid #282828;
+
+  list-style: none;
+font-family: hyeon;
+  float: left;
+  padding : 2px;
+  padding-bottom: 10px;
+  font-size : 20px;
+  text-transform: uppercase;
+min-width: 20px;
+margin-left: 2px;
+
+
+visibility: visible;
+
+}
+.navigation li.active{
+
+visibility: visible;
+  -moz-animation : navi 0.5s;
+  -moz-animation-duration-function : linear;
+  border-bottom:  3px solid #0049ff ;color : #0049ff;
+
+
+
+
+}
+.navigation li:hover{
+  color:blue;
+
+  padding-bottom: 8px;
+  transition: color 0.5s;
+
+
+
+}
+.slides{
+
+}
+.slides .type{
+
+  font-size : 40px;
+  text-transform: uppercase;
+    text-align: center;
+    font-family: averta;
+
+
+
+}
+
+
+.slides p{
+  background : 	#E8E8E8;
+  margin-left : 25%;
+  font-family: averta;
+padding-bottom : 0px;
+  padding : 50px;
+  position: absolute;
+  top : 150px;
+
+  font-size: 25px;
+  text-align: center;
+  height : 30%;
+
+  width : 30%;
+
+/*background : rgb(255,255,255,0.2);
+  border : 1px solid white; */
+
+
+}
+
+/*  swipe */
+.one{
+  transition: none;
+}
+section{
+
+transition: all 1s;
+
+
+}
+ section.active{
+
+visibility: visible;
+opacity: 1;
+
+-moz-transform:none;
+  -moz-transform: translateY(0%);
+
+}
+section.active p{
+
+
+}
+section.prev .type{
+
+
+}
+section.prev{
+  -moz-transition :0.2s;
+  -moz-transform: translateY(-100%) rotate(90deg);
+visibility: hidden;
+
+}
+
+
+
+
+
+/* TExt animation */
+
+.type{
+position: absolute;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+ white-space: nowrap; /* Keeps the content on a single line */
+ margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+ letter-spacing: .15em;
+left : 20%;
+
+}
+.type hr{
+  margin-top : 0px;
+
+
+}
+section.active hr{
+  -moz-animation : line 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.pages:hover {
+
+
+
+
+}
+
+ section.active p ,  section.active li  {
+  -moz-animation : rainin 2s;
+
+
+}
+
+section p  {
+
+position: absolute;
+left : 0%;
+  -moz-animation : rainout 1s;
+
+  -moz-transform: rotateY(0) rotateX(0);
+
+transition: all 1s;
+}
+section p:hover{
+
+    -moz-transform: rotateY(20deg) rotateX(20deg);
+    margin-top : 3px;
+    transition: all 1s;
+}
+
+
+section.prev p , section.prev .type {
+  -moz-animation : rain 3s;
+
+
+  transition: all 1s;
+
+  /* letter-spacing: 250px;
+  transition: all 1s ; */
+
+
+
+
+
+}
+.one{
+
+  z-index: 10;
+}
+
+
+/* Terminal */
+.terminal{
+  position: absolute;
+  top : 50%;
+  left : 30%;
+    font-size : 70px;
+    font-family: monospace;
+height : 70%;
+width : 70%;
+}
+
+#type{
+
+
+
+
+}
+
+
+.terminal img{
+  position: absolute;
+  height : 300px;
+    transition: all 1s;
+  width : 300px;
+  opacity: 0;
+  margin: 0 auto;
+  top : -20%;
+}
+.terminal .caption{
+  visibility: hidden;
+  font-family: gtek;
+  position: absolute;
+  left : 30%;
+}
+
+
+
+
+/**** NAVIGATION ***/
+.change{
+  z-index: 3000;
+  position: fixed;
+    position: absolute;
+      left : 90%;
+      top : 5%;
+}
+.change:hover{
+cursor: pointer;
+}
+#navicon{
+height : 50px;
+  visibility: hidden;
+}
+#navicon:hover{
+
+
+}
+.fnav{
+
+  min-height: 100%;
+  height: 100%;
+
+
+}
+#left li:hover{
+    cursor: pointer;
+}
+        #left{
+            position : absolute;
+
+            min-width : 30%;
+              font-size : 30px;
+              height : 100%;
+
+
+        }
+        #left li{
+            list-style : none;
+            margin: 70px;
+
+
+        }
+
+        #right{
+
+          height: 100%;
+            position : absolute;
+            left : 30%;
+            margin-top : 60px;
+            font-size : 50px;
+
+          min-width : 70%;
+
+
+        }

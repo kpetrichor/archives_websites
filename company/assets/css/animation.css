@@ -1,0 +1,92 @@
+
+@-moz-keyframes navi {
+  from {border-bottom:  3px solid #dec79b ;color : #dec79b;}
+to {border-bottom:  3px solid #dec79b ;color : #dec79b;}
+
+}
+
+@-moz-keyframes rain {
+  from {letter-spacing: 10px;color :black;opacity: 1;}
+to {letter-spacing: 250px; color : green;opacity:0;}
+
+}
+
+@-moz-keyframes rainout {
+  from {letter-spacing: 2px;color :green;opacity: 1;}
+to {letter-spacing:250px; color : black;opacity:0;}
+
+}
+@-moz-keyframes rainin {
+  from {
+left : 30%;
+    color :green;opacity: 0;}
+
+to {
+left : 0%;
+  color : black;opacity:1;}
+
+}
+
+
+@-moz-keyframes line{
+
+  0%{
+      width : 0px
+  }
+
+  100%{
+    width : 100%;
+    color : red;
+  }
+}
+
+@-moz-keyframes trans{
+
+  0%{
+      visibility: hidden;
+
+  }
+
+  100%{
+    visibility: visible;
+  }
+}
+
+@-moz-keyframes slide{
+from{top : 100%;}
+to{top : 90%;}
+
+
+
+}
+
+@-moz-keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@-moz-keyframes para{
+from{background-size : 0 100%;}
+
+  to{background-size : 1000px 100%;}
+}
+
+
+@-moz-keyframes arrow{
+from {
+  background : red;
+}to{
+  background : white;
+}
+}
+@-moz-keyframes barrow{
+from {
+  background : white;
+
+}to{
+  background : red;
+
+}
+
+
+}

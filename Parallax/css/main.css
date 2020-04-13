@@ -1,0 +1,271 @@
+/********************** Background*********************************/
+	
+#background
+	{
+	 	background : url("../images/sstars.gif") top center;
+		height : 10000px;
+		
+		top : 0px;
+		width : 100%;	
+		position : fixed;
+z-index : 2;
+	  
+		}
+
+
+
+/*********************** IMAGES ********************************/
+#images
+{
+	margin-left : 150px;
+	position : fixed;
+	top : 0;
+	width : 100%;
+
+
+	}
+
+  #img-billgates
+{
+	position : absolute;
+	left : 38%;
+	top : 1500px;
+width : 50%;
+	
+
+	
+	padding-top : 200px;
+	}
+
+#img-stevejobs
+{
+	position : absolute;
+	padding-top : 250px;
+	top : 3000px;
+	left : 46%;
+z-index: 3;
+		
+	}
+
+#img-markzukerberg
+{
+	position : absolute;
+	padding-top : 300px;
+	top : 4100px;
+
+	left : 60%;	
+	}
+
+
+/********************** Top NAVIGATION*********************************/
+
+
+#nav li
+{
+	padding-left : 10px;
+	list-style : none;
+	display : inline-block;	
+		
+	}
+
+#nav
+{
+	top : 0px;
+	z-index : 112;
+	position : fixed;
+	padding-left : 333px;
+	width : 100%;
+	padding-bottom : 04px;
+	background-color :  #303d50;
+	}
+#nav a
+{
+	text-decoration : none;
+	color : white;
+	}
+
+	
+
+
+/*HOVER STYLES LINKS*/
+
+nav a
+{
+	padding : 15px;
+	}
+
+a.linkOne:hover
+{
+	background-color : #2E8DEF ;
+	}
+
+
+.link-ssteve:hover
+{
+	background-color : #a5adb0 ;
+	color : black;
+	
+	}
+
+
+.link-smark:hover
+{
+	background-color : #3b5998; 
+	
+	}
+
+
+/*  Active links */
+
+/**********************  Contents *********************************/
+#content
+{
+	position : relative;
+	}
+
+#content article 
+	{	
+		width : 560px;
+		text-align : left;
+		z-index : 3;
+		color : black;
+		left : 20%;
+		text-align  : left;
+		left : 120px;
+		padding-top : 100px;	
+		}
+
+
+
+#content article p
+{
+	margin-top : 69px;
+	}
+
+
+#content #start
+		{
+			width : 700px;
+
+			margin : 0 auto;
+			text-align : left;
+			margin-top : 490px;
+			font-size  : 100px;	
+			}
+
+
+
+#content .one
+{
+	position : absolute;
+	top : 2760px;
+	color : white;
+	}
+
+#content #twin
+{
+	position : absolute;
+	top : 4000px;
+	color : white;
+	}
+
+
+
+#content .two
+{
+	position : absolute;
+	top : 5960px;
+	color : white;	
+	z-index :5;	
+	}
+
+#content .three
+{
+	position : absolute;
+	top : 7960px;
+	
+	}
+#content #end
+	{
+		position : absolute;
+		top : 10000px;
+
+		}	
+
+
+
+/********************** Back*********************************/
+
+.back-image
+
+{
+	width : 100%:
+	position : fixed;
+	
+	color : red;
+	position : relative;
+
+	}
+
+
+
+#backOne 
+{
+	background : rgb(46, 141, 200) url(../images/back/logo.jpg) 0  169px no-repeat; 
+	height : 2500px;
+	margin-top : 1500px;
+	z-index : -1;
+
+		
+	
+	}
+#backTwo
+	{
+		background : #17122f  150px no-repeat;
+		height : 4000px;
+		margin-top : 0px;
+		z-index : -1;
+		
+		}
+#backThree
+		{
+		background : url(../images/back/face.jpg) no-repeat;
+
+		
+			height : 2000px;
+			margin-top : 0px;
+			}
+
+/* Fonts*/
+
+@font-face
+{
+	font-family : junction;
+	src: url(../fonts/Junction.otf);
+	}
+
+@font-face
+{
+	font-family : tahoma;
+	src: url(../fonts/Tahoma.ttf);
+	}
+
+
+article
+{
+	font-family : junction;
+	font-size : 32px;
+	}
+
+
+#content .three
+{
+background : #3b5998;
+font-family : tahoma;
+color : white;
+padding-left : 15px;
+padding-right : 15px;
+padding-bottom : 40px;
+
+
+}

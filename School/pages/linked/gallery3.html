@@ -1,0 +1,124 @@
+<html>
+<head>
+
+<style>
+
+
+#gallery img
+{
+	width : 120px;
+	padding : 5px;
+	float : right;
+	}
+
+
+	
+#display img
+	
+	{
+		border : 2px solid #ccc;
+		border-radius : 10px;
+		position : absolute;
+		}
+
+#display
+{
+	width : 600px;
+	height : 400px;
+	background-color : black;
+	position : relative;
+	}
+
+#gallery img:hover
+	{
+	cursor : pointer;
+		}
+
+#gallery
+	{
+	 display : inline-block;
+	margin-right : 70px;	
+	float : right;
+	 	}	
+
+#gallery li
+	
+	{
+	 list-style : none;
+	 	}
+
+
+</style>
+
+<script src ="../js/jquery-1.7.2.min.js"> </script>
+
+
+<script>
+
+$(document).ready(function() {
+		
+
+	$('#gallery img').click(function(evt) {
+		//don't follow link
+		 evt.preventDefault();
+		 //get path to new image
+	   var imgPath = $(this).attr('src');
+		 //get reference to old image
+		 var oldImage = $('#display img');
+		 			
+			 //create HTML for new image
+			 var newImage = $('<img src="' + imgPath +'">');
+			
+			
+			 //add to the #photo div
+			 $('#display').append(newImage);
+		
+
+ 			 newImage.hide();
+			 newImage.fadeIn(1000);
+			 
+			 //fade out old image and remove from DOM
+			 oldImage.fadeOut(1000,function(){
+		     $(this).remove();
+				});
+				
+				
+			 
+		 
+	}); // end click
+
+	
+}); // end ready
+</script>
+
+
+</head>
+
+<body>
+
+
+	<div id= "gallery">
+
+		<ul>
+		<li><img src = "../images/gallery/2.jpg"> <li>
+		<li><img src = "../images/gallery/3.jpg"> <li>
+		<li><img src = "../images/gallery/4.jpg"> <li>
+		<li><img src = "../images/gallery/5.jpg"> <li>
+		<li><img src = "../images/gallery/6.jpg"> <li>
+		<li><img src = "../images/gallery/7.jpg"> <li>
+		<li><img src = "../images/gallery/8.jpg"> <li>
+		<li><img src = "../images/gallery/9.jpg"> <li>
+
+
+		</ul>
+
+	</div>
+	
+
+	<div id = "display">
+
+	
+	</div>
+</body>
+
+</html>

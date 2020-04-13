@@ -1,0 +1,32 @@
+@font-face {
+  font-family : simple;
+  src: url(fonts/simple.ttf);
+}
+
+@font-face {
+  font-family : tilly;
+  src: url(fonts/tl.otf);
+}
+
+@font-face {
+  font-family : averta;
+  src: url(fonts/averta.otf);
+}
+
+@font-face {
+  font-family : terminal;
+  src: url(fonts/terminal.ttf);
+}
+@font-face {
+  font-family : gtek;
+  src: url(fonts/gtek.ttf);
+}
+@font-face {
+  font-family : hyeon;
+  src: url(fonts/hyeon.ttf);
+}
+
+@font-face {
+  font-family : hyeon;
+  src: url(fonts/marvel.ttf);
+}

@@ -1,0 +1,174 @@
+<html>
+<head>
+<title> School </title>
+
+<link href = "fonts.css" rel="stylesheet">
+	<link href="../css/first.css" rel="stylesheet">
+	<link href="../css/middle.css" rel="stylesheet">
+	<link href="../css/hover.css" rel="stylesheet">
+	<script src="js/jquery-1.7.2.min.js"> </script>
+	<script src="../js/fixed.js">	</script>
+</head>
+
+
+<body>
+	<div class="header" id="header">
+		<div class = "logo">
+		<a href = "call.html"><img src ="../images/logo.png" > </a>
+          
+            
+		
+		</div>
+	
+		<div class = "text">
+		
+		 <h1> Sri Guru Harkrishan Public School </h1>
+		<span class="city">Nagpur India</span>
+		
+<!-- <img src="../images/firefox.png" height="50" class="firefox" id="firefoxImage">
+	<span class="firefox" id="firefoxText">Site Recommends Firefox </span>
+			--!>	</div>		
+	
+		
+			
+	
+	
+		<div class ="top" id ="top">
+		<ul class = "topbar">
+			<li> <a href = "call.html"> Home  </a> </li>
+			<li> <a href = " javascript:void(0)" onclick = "callme('linked/beta.html')"> Infrastructure </a> </li>
+			<li> <a href = " javascript:void(0)" onclick = "callme('linked/beta.html')"> Staff </a> </li>
+			<li><a href = " javascript:void(0)" onclick = "callme('linked/beta.html')">  Apply </a> </li>		</ul>
+
+		</div>
+		
+	</div>
+
+
+		
+		<div class = "middle">
+
+			<nav class = "sidebarOne">
+			<ul>	
+				<li id="dp"> <a href="#"> About School </a> 
+				 	 
+					  <ul class="drop">
+				    <li onclick="callme('linked/schooling.html')">  <a href="javascript:void(0)" 
+				    		>
+				    		Schooling</a></li>
+				 
+				  <li class = "fees" onclick="callme('linked/fees.html')"> <a href="javascript:void(0)" 
+					    >
+					  Fees/Scholarship  </a> </li>
+			       	       	    
+			          <li onclick = "callme('linked/beta.html')"> <a href="javascript:void(0)" >
+				  	   Teaching Staff</a></li>
+			       	    
+				    
+				   <li onclick="callme('linked/facilities.html')"> <a href="javascript:void(0)" 
+					    >Facilities</a></li>
+					</ul>
+				
+							 	
+				</li>	
+			
+		<li id="dp"> <a href="#">Non-Academics</a> 
+		
+			<ul class="drop" >
+				
+			       	       <li onclick = "callme('linked/beta.html')"> <a href=" javascript:void(0)" >Sports</a></li>
+			       	       <li onclick = "callme('linked/beta.html')"> <a href=" javascript:void(0)" >Scouts & Guide</a></li>
+			</ul>
+		</li>	
+								
+		<li class="ndp" id ="none" onclick="callme('linked/gallery.html')"><a href="javascript:void(0)" >Gallery </a> </li>	
+		<li class = "ndp" onclick="callme('linked/awards.html')"><a href="javascript:void(0)" >Awards & Acheivements </a> </li>	
+		<li class="ndp" onclick = "callme('linked/beta.html')"> <a href="javascript:void(0)" >Meritorious Students</a> </li>	
+			</ul>			
+			
+		</nav>	
+
+	<div class = "content">
+
+		
+		<div class = "school">
+		 <img src = "../images/school.jpg">
+		 	<div class="caption"> Sri Guru Harkrishan Public School </div>
+		 </div>
+
+				
+	</div>	
+	<script>	function callfac()
+			{
+		                //$(".facilitiesContent") .load('linked/facilities/computer.html');	
+				
+				//document.body.style.background="yellow";
+			}
+	 </script>
+	<script>
+
+		function callme(linkedFile)
+
+		{
+			//document.write(locate);
+			var locate = linkedFile + ' .lcontent';
+			$(".content").load(linkedFile);
+			
+			
+			$('html, body').animate({scrollTop:110},1000);
+			}
+	</script>
+
+
+
+	<div class="footer" >
+
+			<div class ="jumpTo">
+					<ul class="section"> 
+					<li> <a href = " javascript:void(0)" onclick = "callme('linked/beta.html')"> Staff</a></li>	
+					<li> <a href = "javascript:void(0)" onclick = "callme('linked/facilities.html')">Facilities</a></li>
+					<li> <a href = "javascript:void(0)" onclick = "callme('linked/beta.html')">Sports</a></li>
+					<li> <a href="javascript:void(0)" onclick = "callme('linked/beta.html')">Address</a> </li>	
+							
+				</ul>
+			
+				<ul class="section"> 
+					<li> <a href = "javascript:void(0)" onclick = "callme('linked/gallery.html')"> Photos</a></li>	
+					<li> <a href = "javascript:void(0)" onclick = "callme('linked/beta.html')">Videos</a></li>
+					<li> <a href = "javascript:void(0)" onclick = "callme('linked/awards.html')">Awards & Achievement</a></li>
+					<li> <a href="javascript:void(0)" onclick = "callme('linked/beta.html')">Meritorious Students</a> </li>
+						
+						
+	
+				</ul>
+				</div>		
+	
+		<div class="developer">
+		<span style = "color:#444444; position : aboslute; left: 20px;"> <i>  Kunal W. 2014  </i></span>
+	</div>
+
+
+</div>	
+
+
+<div class = "contact">
+		<span style="margin-top:20px;color:white;">  Contact Us
+		<br> 
+		 sghps1991@gmail.com 	 </span>
+		<br>
+  		<br>
+	<span style="color:white;">Catch us On </span> 	
+	<ul class = "social">
+
+		<li> <a href="http://www.twitter.com"><img src ="../images/twitter.png"></a></li>
+		<li> <a href="http://www.facebook.com"><img src ="../images/facebook.png"></a></li>
+		<li> <a href="http://www.google.com"><img src ="../images/google.png"></a></li>
+		
+			
+	</ul>
+			
+	</div>	
+		
+</body>
+
+</html>

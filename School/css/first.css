@@ -1,0 +1,357 @@
+
+
+.text
+{
+text-align : left;
+margin-left : 280px;
+padding-top: 10px;
+font-family : alegreya;
+}
+
+.text .city
+{
+	font-size : 25px;
+	}
+.firefox
+{
+float : right;
+}	
+
+#firefoxImage
+
+{
+background-color : blue;
+position : absolute;
+right : 20%;
+margin-top : -60px;
+}
+#firefoxText	
+{
+position : absolute;
+left: 80%;
+margin-top : -50px;
+padding-left: 10px;
+}
+.top
+{
+position : static;
+z-index : 1000;
+}
+.logo 
+{
+	position : absolute;
+	left : 160px;
+	
+	padding-top : 20px;
+}
+
+
+.logo img
+{
+
+margin-left : 20px;
+}
+
+.middle
+{
+margin : 0 auto;
+}
+
+.header
+{
+//	background : white ;
+
+ /*	background : #A3E0FF; */
+	width :100%;
+}
+a
+{
+color : black;
+}
+.topbar li
+{
+	display : inline-block;
+	padding-left : 15px;
+	margin
+	font-family : Arial;
+
+}
+
+.topbar li:last-child
+{
+	padding-right : 20px;
+}
+.topbar 
+{
+float : right;
+padding-left : 75%;
+padding-right : 3.3%;
+
+position : relative;
+right  : 30%;
+}
+
+
+
+
+
+
+
+.topbar a
+
+{
+text-decoration : none;
+
+font-family : roboto;
+}
+.school
+
+
+{
+float : left;
+}
+
+.footer
+{
+
+clear : both;
+
+background-color : #260126;
+}
+
+.footer .section
+{
+float : right;
+
+padding-right : 30px;
+}
+.footer li
+{
+list-style : none;
+padding-top : 20px;
+}
+
+.footer a
+{
+color : white;
+
+font-family : roboto;
+text-decoration : none;
+}
+
+.jumpTo 
+{
+margin-right : 60px;
+margin-top : -13%;
+}
+
+
+
+.contact  
+{
+position : absolute;
+margin-top : -180px;
+font-family : roboto;
+}
+
+
+.contact 
+{
+padding-left : 20px;
+}
+.social li
+{
+display : inline-block;
+}
+
+.social img
+{
+height : 30px;
+padding-left : 10px;
+}
+
+
+.contact span
+{
+font-color : white;
+}
+
+
+.developer
+{
+
+margin-top  : 35%;
+background-color : #333333;
+padding-top : 20px;
+width : 100%;
+}
+
+.developer span
+{
+padding-left : 20px;
+width : 100%;
+margin-left: 90%;
+}
+
+.social img
+{
+	-moz-transform :  scale(1);
+	-moz-transition : all .3s ease-In;
+	}
+.social img:hover
+{
+	-moz-transform : scale(1.4);
+	
+	}
+
+
+
+
+
+.content
+
+{
+	width : 55%;
+	padding : 40px;
+	min-width : 50%;
+	margin : 0 auto;
+	}
+
+
+
+	.content .topic h1
+	{
+
+		text-align : center;
+		text-decoration : underline;
+
+
+		}
+
+.mcontent
+{
+	font-size : 20px;
+	
+	}
+
+.fcontent img
+{
+	left : 540px;
+
+	position : absolute;
+	}
+
+#safe img
+{
+	left : 0px;
+	position : static;
+	}
+.fcontent .computer
+{
+	position : static;
+	float : right;
+	}
+
+
+/*************** Background Classes **********/
+
+
+.header
+{
+
+/* background :#F0FFE9;  */
+overflow : hidden;
+
+
+//background : url("../images/background/globe.jpg") no-repeat 920px -40px;
+//background : #C23161;
+}
+
+
+.header 
+{
+	color : black;
+	}
+
+
+.top
+{
+margin-top : 5px;
+overflow : hidden;
+/* background-color : #E1FED4;  light green */
+/* background : url(../images/back.jpg); */
+background : #444444;
+
+width : 100%;
+
+
+}
+
+.top a
+{
+	color : white;
+	}
+
+body
+{
+	font-family : opensans;
+	margin : 0 auto; 
+
+	background : url("../images/background/geometry.png");
+
+}
+
+.content
+{
+	background : white;
+
+	}
+
+.footer
+{
+	background : #333333;
+	
+	}
+
+
+/********************** This is all about footer*******************/
+
+.footer
+{
+	position : static;
+	}
+
+.footer .jumpTo li a:hover
+{
+	color : red;
+	text-decoration : underline;
+
+	}
+
+
+.developer span
+{
+	background-color : white;
+	padding-right : 20px;
+	}
+
+
+
+.school
+
+{
+	margin-left : 110px;
+
+		}	
+
+.school_content 
+{
+	margin-top : 457px;
+	color : #2E98FF;
+	
+	}
+.school_content h2
+{
+	
+	text-align : left;
+	}
