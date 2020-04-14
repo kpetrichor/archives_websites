@@ -15,6 +15,22 @@ $(document).ready(function(){
 
   });
 
+
+  $(window).bind('mousewheel DOMMouseScroll', function(event){
+      if (event.originalEvent.wheelDelta > 2000 || event.originalEvent.detail < -2000) {
+          // scroll up12
+          back();
+
+      }
+      else {
+          // scroll down
+        next();
+      }
+  });
+
+
+
+
 $('.slides').swipe({
 
   swipe:function(event , direction , distance , duration , fingerCount){

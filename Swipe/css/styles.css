@@ -17,7 +17,9 @@ body{
 font-size :1.5em;
 font-family: simple;
 
-background: url("../images/one.jpg");;
+background: url("../images/one.jpg");
+height : 110%;
+
 }
 .zero h1{
 	font-family : gtek;
@@ -109,7 +111,7 @@ transition: all 1s;
 moz-transition: all 1s;
 opacity: 1;
 
-	-moz-transform : translateX(100%);
+	-moz-transform : translateY(100%);
 
 }
 .titleSlide{
