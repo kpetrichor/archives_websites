@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kunal Wasnik</title>
+
+<style>
+	
+
+body{
+
+/*	background-color : black;
+	color : white;*/
+	font-family: 'Baloo Paaji 2', cursive;
+
+
+}
+a{
+color:grey;
+
+text-decoration: none;	
+}
+.main{
+
+
+
+
+}
+.profile{
+
+position: absolute;
+top :10%;
+left:50%;
+font-family: 'Roboto', sans-serif;
+
+}
+.profile span{
+	padding-left: 20px;
+	text-align: right;
+}
+img{
+
+	height:100px;
+	float:left;
+	border-radius: 50%;
+
+}
+.topics{
+
+position: absolute;
+top :35%;
+left:30%;
+font-style: bold;
+font-size : 25px;
+
+}
+.topics span{
+	width: 100%;
+	border-right : 2px solid black;
+}
+
+.contents{
+
+position: absolute;
+top :38%;
+left:50%;
+
+min-height: 50%;
+
+
+
+
+}
+
+
+.topic{
+
+	clear:both;
+	padding: 20px;
+	float: left;
+	
+	cursor: pointer;
+}
+
+.content ul{
+	list-style-type: none;
+}
+
+
+
+.name{
+
+font-size : 40px;
+}
+.topic a{
+	transition : 0.3s;
+
+}
+.topic a:hover{
+	color : #3C99DC;
+		transition : 0.3s;
+	
+}
+.topics .activetopic {
+
+	border-right : 2px solid #3C99DC;
+
+}
+.activetopic a{
+	color :#3C99DC;
+	transition : 0.3
+
+
+	
+}
+
+
+
+.content li:nth-child(1){
+	color:#3C99DC;
+
+}
+.contents ul li:nth-child(2){
+
+	
+	
+	padding-left : 40px;
+}
+
+.big{
+
+font-size : 22px;
+}
+
+.small{
+
+font-size : 18px;
+}
+</style>
+
+<script>
+
+$(document).ready(function(){
+
+
+	$(".content").hide();
+	var prevlink="";
+
+
+
+	$(".topic").click(function(){
+
+
+		var select = ".content" + $(this).index();
+		var link = ".topic" + $(this).index();
+		
+
+		console.log("Clicked " + select);
+
+		$(prevlink).removeClass("activetopic");
+		$(link).addClass("activetopic");
+
+		$(".content").hide();
+		$(select).fadeIn();
+
+		 prevlink = link;
+		console.log("Previous " + prevlink);
+
+
+	});
+
+});
+
+
+</script>
+
+
+
+
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+
+<body>
+
+
+
+
+
+
+<div class = "main">
+
+	<div class  ="profile">
+		<img src="https://media-exp1.licdn.com/dms/image/C5103AQGauhWFEInXRg/profile-displayphoto-shrink_200_200/0?e=1603324800&v=beta&t=ZiY-FAnB-3Fqa5EFkX4JXbQm42KGFgxZWCdY6s8_9Kk"> 
+		<span class = "name"> KUNAL WASNIK</span><br>
+		<span class = "contact">wasnik.kunal4@gmail.com</span>
+
+
+	</div>
+
+	<div class = "topics">
+			<span class = "topic topic0"> <a href="#">EDUCATION </a> </span>
+			<span class = "topic topic1"> <a href="#"> EXPERIENCE  </a> </span>
+			<span class = "topic topic2"><a href="#"> SKILLS  </a> </span>
+			<span class = "topic topic3"><a href="#">  HOBBIES  </a> </span>
+
+
+
+
+	</div>
+
+
+		<div class= "contents">
+
+			<div class = "content content0">
+						<ul>
+						<li class= "big">Bachelor in Computer Engineering</li>
+						<li class = "small">Ramrao Adik Institute Of Technology (Expected 2022)</li>
+						</ul>
+
+						<ul>
+						<li class= "big">Intermediate / +2</li>
+						<li class = "small">Shivaji Science Jr.  College, Nagpur 2017	</li>
+						</ul>
+
+
+						<ul>
+						<li class= "big">Matriculation</li>
+						<li class = "small">Sri Guru Harkrishan Public School, Nagpur 2015</li>
+						</ul>
+
+
+
+			 </div>
+
+
+			 <div class = "content content1">
+						<ul>
+						<li class= "big">Intern </li>
+					
+						<li class = "big"> Eyantra , IITB (May 2020 - June 2020) </li>
+					
+						</ul>
+
+					
+
+
+			 </div>
+
+
+			  <div class = "content content2">
+						<ul>
+						<li class= "big">Programming</li>
+						<li class = "big">C , Embedded C, C++, Java, Python </li>
+						</ul>
+
+
+						<ul>
+						<li class= "big">Web Development</li>
+						<li class = "big">HTML , CSS , Javascript , Jquery , PHP , Mysql</li>
+						</ul>
+
+						<ul>
+						<li class= "big">Others</li>
+						<li class = "big">ROS , Gazebo</li>
+						</ul>
+
+					
+
+
+			 </div>
+
+
+
+			  <div class = "content content3">
+						<ul>
+						<li> </li>
+						<li class= "big">Reading Books</li>
+						</ul>
+
+
+
+					
+
+
+			 </div>
+
+
+
+
+		</div>
+
+</div>
+
+
+</body>
+</html> 
