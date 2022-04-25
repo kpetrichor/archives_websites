@@ -102,15 +102,18 @@ height : 100%;
 padding : 36px;
 box-sizing : border-box;
 -moz-box-sizing : border-box;
+-webkit-box-sizing : border-box;
 visibility: hidden;
 color :white;
 
 font-family : arial;
 
 transition: all 1s;
-moz-transition: all 1s;
+-moz-transition: all 1s;
+-webkit-transition: all 1s;
 opacity: 1;
 
+	-webkit-transform : translateY(100%);
 	-moz-transform : translateY(100%);
 
 }
@@ -136,6 +139,7 @@ color : white;
 section.prev{
 
 		-moz-transform : translateX(-100%);
+	-webkit-transform : translateX(-100%);
 
 }
 section p{
